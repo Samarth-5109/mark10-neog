@@ -12,8 +12,10 @@ body{
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 40vw;
+    width: 30vw;
     background-color:#00C1D4;
+    border-radius: 1rem;
+    border: 10px solid rgb(37, 76, 158);
 }
 
 .description{
@@ -25,12 +27,14 @@ body{
     margin : 0.5rem 2rem 1.5rem 2rem;
     padding: 0.5rem;
     border-radius: 1rem;
+    border: solid #00C1D4;
 }
 
 #cash-gn{
     margin : 0.5rem 2rem 1rem 2rem;
     padding: 0.5rem;
     border-radius: 1rem;
+    border: solid #00C1D4;
 }   
 
 
@@ -41,6 +45,7 @@ body{
    border: 5px solid #00C1D4;
    color: aliceblue;
    font-family: 'gluten', cursive;
+   cursor: pointer;
 
 }
 
@@ -50,11 +55,15 @@ body{
 
 .no-of-notes{
     background-color: rgb(191, 198, 201);
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .row-2{
     background-color: cornsilk;
 
     color: darkcyan;
+}
+
+.h2{
+    padding: 0.5rem
 }
