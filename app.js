@@ -8,22 +8,24 @@ var notes   =   [2000, 500, 100, 20, 10, 5, 1];
 
  checkButton.addEventListener("click", function validateBillAndCashAmount() {
     hideMessage();
+    if(billAmount !==""){
+        if(Number(billAmount.value) > 0){
 
-    if(billAmount.value > 0){
-
-        if(cashGiven.value >= billAmount.value){
-            var balanceAmount   =   cashGiven.value   -   billAmount.value;
-           
-            calculateBalanceAmount(balanceAmount);
-
-
-        } else{
-            displayMessage("Cash provided should be atleast equal to the bill amount ");
+            if((Number(cashGiven.value)) >= (Number(billAmount.value))){
+                var balanceAmount   =   cashGiven.value   -   billAmount.value;
+               
+                calculateBalanceAmount(balanceAmount);
+    
+    
+            } else{
+                displayMessage("Cash provided should be atleast equal to the bill amount ");
+            }
+        }else{
+           displayMessage("Amount should ge greater than 0 or check if any field is missing");
+    
         }
-    }else{
-       displayMessage("Amount should ge greater than 0");
-
     }
+   
 
  
 
